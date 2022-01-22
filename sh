@@ -4,7 +4,7 @@ Get-LocalUser -Name "Administrator" | Enable-LocalUser
 Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
 tar xf ngrok.zip
 Copy ngrok.exe C:\Windows\System32
-cmd /c echo ./ngrok.exe authtoken "2442n2PzvbQFGpQWEYjQihhzE52_5D91ERvSxWtHcuhnr48xZ" >a.ps1
+cmd /c echo ./ngrok.exe authtoken "2444Szag78qhWHRHYGrwTWl665r_3qoDyhwZArQU2omqv5Zzd" >a.ps1
 cmd /c echo cmd /k start ngrok.exe tcp 3389 >>a.ps1
 cmd /c echo ping -n 999999 10.10.10.10 >>a.ps1
 .\a.ps1
